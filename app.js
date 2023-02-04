@@ -67,7 +67,7 @@ app.delete('/job/:id', async (req, res) => {
         const deleteTodo = await pool.query("DELETE FROM jobs WHERE job_id=$1",
             [req.params.id]);
 
-        res.json("Todo was deleted")
+        res.json("Jobs was deleted")
     } catch (error) {
         console.log(err.message);
 
@@ -87,15 +87,15 @@ app.get('/job', async (req, res) => {
 
 })
 
-app.patch("/todo/:id", async (req, res) => {
-    try {
-        const task = req.body.task.task;
-        const updateTodo = await pool.query("UPDATE todo SET task = $1 WHERE todo_id=$2 ", [task, req.params.id])
-        res.json("Todo was updated")
-    } catch (err) {
-        console.log(err.message);
-    }
-})
+// app.patch("/todo/:id", async (req, res) => {
+//     try {
+//         const task = req.body.task.task;
+//         const updateTodo = await pool.query("UPDATE jobs SET task = $1 WHERE todo_id=$2 ", [task, req.params.id])
+//         res.json("Todo was updated")
+//     } catch (err) {
+//         console.log(err.message);
+//     }
+// })
 
 
 app.listen(4000, () => {

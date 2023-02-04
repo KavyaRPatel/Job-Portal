@@ -49,4 +49,28 @@
 </script>
 
 <style>
+table {
+  width: 80%;
+  border-collapse: separate;
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-color: rgb(125, 192, 231);
+  border-bottom: 1px solid rgb(56, 132, 202);
+}
+th {
+  background-color: #69a1eb;
+  font-weight: bold;
+  border-color: rgb(56, 132, 202);
+}
+button {
+  
+  margin-left: 10px;
+}
 </style>

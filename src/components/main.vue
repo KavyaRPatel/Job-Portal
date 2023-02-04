@@ -1,16 +1,17 @@
 <template>
- 
+  <div>
+    <app-add></app-add>
+  </div>
 </template>
 
 <script>
-import add_job from './add_job.vue'
+import add_job from "./add_job.vue";
 export default {
-    components:{
-        'app-add': add_job
-    }
-  
-}
+  components: {
+    "app-add": add_job,
+  },
+};
 </script>
-style scoped>
+<style scoped>
 
 </style>
